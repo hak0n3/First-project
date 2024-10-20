@@ -10,18 +10,25 @@ body {
 
 header {
     height: 10vh;
-    background-color: white;
-    
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    background-color: grey;
 }
 
-.header-container {
+.header-logo-container {
     width: 80%;
     height: 80%;
     
-    background-color: black
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-cont {
@@ -32,11 +39,28 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-color: magenta;
 }
 
 .logo {
     color: white;
     font-size: 20px;
     font-weight: 800;
+
+    text-decoration: none;
+}
+
+.header-nav {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-btn {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
 }
